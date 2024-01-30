@@ -39,6 +39,7 @@
             btnClear = new Button();
             lblResult = new Label();
             lblTitle = new Label();
+            lblTotalResult = new Label();
             SuspendLayout();
             // 
             // lblVBP
@@ -73,7 +74,7 @@
             // cmbWarranty
             // 
             cmbWarranty.FormattingEnabled = true;
-            cmbWarranty.Items.AddRange(new object[] { "Yes", "No" });
+            cmbWarranty.Items.AddRange(new object[] { "One Year", "Two Year", "Three Year" });
             cmbWarranty.Location = new Point(512, 165);
             cmbWarranty.Name = "cmbWarranty";
             cmbWarranty.Size = new Size(220, 23);
@@ -102,6 +103,7 @@
             // 
             // Calculate
             // 
+            Calculate.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Calculate.Location = new Point(588, 245);
             Calculate.Name = "Calculate";
             Calculate.Size = new Size(144, 50);
@@ -151,6 +153,18 @@
             lblTitle.TabIndex = 11;
             lblTitle.Text = "Billy Bob's Vehicle Sales Tax Calculator";
             // 
+            // lblTotalResult
+            // 
+            lblTotalResult.AutoSize = true;
+            lblTotalResult.Font = new Font("Tahoma", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lblTotalResult.ForeColor = Color.FromArgb(192, 0, 0);
+            lblTotalResult.Location = new Point(553, 337);
+            lblTotalResult.Name = "lblTotalResult";
+            lblTotalResult.Size = new Size(97, 25);
+            lblTotalResult.TabIndex = 12;
+            lblTotalResult.Text = "SAMPLE";
+            lblTotalResult.Visible = false;
+            // 
             // frmBbvstc
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -158,6 +172,7 @@
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblTotalResult);
             Controls.Add(lblTitle);
             Controls.Add(lblResult);
             Controls.Add(btnClear);
@@ -188,5 +203,6 @@
         private Button btnClear;
         private Label lblResult;
         private Label lblTitle;
+        private Label lblTotalResult;
     }
 }
