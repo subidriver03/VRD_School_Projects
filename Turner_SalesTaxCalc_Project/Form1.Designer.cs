@@ -2,15 +2,8 @@
 {
     partial class frmBbvstc
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+               private System.ComponentModel.IContainer components = null;
+             
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -55,7 +48,7 @@
             // txtPriceWholeDollar
             // 
             txtPriceWholeDollar.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            txtPriceWholeDollar.Location = new Point(512, 108);
+            txtPriceWholeDollar.Location = new Point(462, 108);
             txtPriceWholeDollar.Name = "txtPriceWholeDollar";
             txtPriceWholeDollar.Size = new Size(220, 30);
             txtPriceWholeDollar.TabIndex = 2;
@@ -76,7 +69,7 @@
             cmbWarranty.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             cmbWarranty.FormattingEnabled = true;
             cmbWarranty.Items.AddRange(new object[] { "None", "One Year", "Two Year", "Three Year" });
-            cmbWarranty.Location = new Point(512, 165);
+            cmbWarranty.Location = new Point(462, 164);
             cmbWarranty.Name = "cmbWarranty";
             cmbWarranty.Size = new Size(220, 31);
             cmbWarranty.TabIndex = 4;
@@ -98,7 +91,7 @@
             cmbStateSelect.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             cmbStateSelect.FormattingEnabled = true;
             cmbStateSelect.Items.AddRange(new object[] { "WA", "OR" });
-            cmbStateSelect.Location = new Point(632, 217);
+            cmbStateSelect.Location = new Point(582, 212);
             cmbStateSelect.Name = "cmbStateSelect";
             cmbStateSelect.Size = new Size(100, 31);
             cmbStateSelect.TabIndex = 6;
@@ -107,7 +100,7 @@
             // Calculate
             // 
             Calculate.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            Calculate.Location = new Point(588, 274);
+            Calculate.Location = new Point(538, 268);
             Calculate.Name = "Calculate";
             Calculate.Size = new Size(144, 50);
             Calculate.TabIndex = 7;
@@ -117,8 +110,8 @@
             // 
             // btnExit
             // 
-            btnExit.Font = new Font("Tahoma", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnExit.Location = new Point(671, 392);
+            btnExit.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnExit.Location = new Point(626, 392);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(106, 32);
             btnExit.TabIndex = 8;
@@ -128,8 +121,8 @@
             // 
             // btnClear
             // 
-            btnClear.Font = new Font("Tahoma", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnClear.Location = new Point(582, 392);
+            btnClear.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnClear.Location = new Point(512, 392);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(83, 32);
             btnClear.TabIndex = 9;
@@ -151,11 +144,12 @@
             // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTitle.Location = new Point(191, 9);
+            lblTitle.Location = new Point(168, 32);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(427, 31);
             lblTitle.TabIndex = 11;
             lblTitle.Text = "Billy Bob's Vehicle Sales Tax Calculator";
+            lblTitle.Click += lblTitle_Click;
             // 
             // frmBbvstc
             // 
@@ -163,7 +157,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(740, 450);
             Controls.Add(lblTitle);
             Controls.Add(lblResult);
             Controls.Add(btnClear);
